@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./تنزيل (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="overflow-hidden">
+    <div id="loading" class="loading ">
+    <span class="loader"></span>
+</div>
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0">
+        <div class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled ">
+                    <li onclick="getData()"  class="py-2 position-relative cursor-pointer">Now Playing</li>
+                    <li onclick="getPopular();"  class="py-2 position-relative cursor-pointer">Popular</li>
+                    <li onclick="getTopRated()"  class="py-2 position-relative cursor-pointer">Top Rated</li>
+                    <li onclick="getTrending()" class="py-2 position-relative cursor-pointer">Trending</li>
+                    <li onclick="getUpcoming()" class="py-2 position-relative cursor-pointer"> Up Coming</li>
+                    <li class="  py-2 position-relative cursor-pointer">
+                       <a class="text-decoration-none text-white" href="#form">Contact Us</a> </li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="imgs/logo.png" alt="" srcset="">
+            <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5">
+        <div class="d-flex justify-content-center">
+            <input id="input" type="search" class="form-control w-50 bg-white" placeholder="Search...">
+        </div>
+    </section>
+
+    <section class="d-flex justify-content-center align-items-center con">
+        <div class="container con1">
+            <div id="rowData" class="row con2">
+                <!-- Image content here -->
+            </div>
+        </div>
+    </section>
+    <form id="form" class="text-center form-check mx-5">
+        <div class="row mt-3 mx-5">
+            <div class="col-md-6">
+                <input type="text" required id="name" maxlength="37" class="form-control mt-4" placeholder="Enter Your Name">
+                <span id="msgName" class="error d-none text-danger">Invalid name</span>
+            </div>
+            <div class="col-md-6">
+                <input type="email" required id="email" class="form-control mt-4" placeholder="Enter Your Email">
+                <span id="msgEmail" class="error d-none text-danger">Invalid email</span>
+            </div>
+            <div class="col-md-6">
+                <input type="text" required id="phone" class="form-control mt-4" placeholder="Enter Your Phone">
+                <span id="msgPhone" class="error d-none text-danger">Invalid phone number</span>
+            </div>
+            <div class="col-md-6">
+                <input type="number" required id="age" class="form-control mt-4" placeholder="Enter Your Age">
+                <span id="msgAge" class="error d-none text-danger">Invalid age</span>
+            </div>
+            <div class="col-md-6 position-relative">
+                <input type="password" required id="password" class="form-control mt-4" placeholder="Enter Your Password">
+                <span id="msgPassword" class="error d-none text-danger">Invalid password</span>
+            </div>
+            <div class="col-md-6">
+                <input type="password" required id="repassword" class="form-control mt-4" placeholder="Re-enter Password">
+                <span id="msgRepassword" class="error d-none text-danger">Passwords do not match</span>
+            </div>
+            <div class="col-md-12 mt-4">
+                <button type="submit" class="form-btn btn btn-outline-dark rounded-2 mb-3">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="./Js/jquery-3.7.1.min.js"></script>
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/index.js"></script> 
+</body>
+</html>
